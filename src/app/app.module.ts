@@ -14,12 +14,17 @@ import {MatListModule} from '@angular/material/list';
 
 import {MatIconModule} from '@angular/material/icon';
 
+import {MatCardModule} from '@angular/material/card';
+import { HomeComponent } from './components/views/home/home.component';
+import { AppRoutingModule } from './app-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +32,9 @@ import {MatIconModule} from '@angular/material/icon';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
