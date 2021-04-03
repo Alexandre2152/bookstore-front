@@ -15,8 +15,10 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 
 import {MatIconModule} from '@angular/material/icon';
-
 import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+
+
 import { HomeComponent } from './components/views/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CategoriaReadComponent } from './components/views/categoria/categoria-read/categoria-read.component';
@@ -43,7 +45,8 @@ import {MatTableModule} from '@angular/material/table';
     MatCardModule,
     AppRoutingModule,
     MatTableModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
