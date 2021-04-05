@@ -1,0 +1,18 @@
+<form>
+    <h1>ATUALIZANDO CATEGORIA</h1>
+
+    <mat-form-field class="form">
+        <mat-label>Nome</mat-label>
+        <input [(ngModel)]="categoria.nome" matInput type="text" name="nome" placeholder="EX. Computação">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Descrição</mat-label>
+        <textarea [(ngModel)]="categoria.descricao" matInput type="text" name="descricao" placeholder="EX. Livros de Computação"></textarea>
+    </mat-form-field>
+
+    <div class="button">
+        <button (click)="update()" mat-raised-button color="basic" class="botton">ATUALIZAR</button>
+        <button (click)="cancelar()" mat-raised-button color="basic" class="botton">CANCELAR</button>
+    </div>
+</form>
